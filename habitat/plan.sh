@@ -13,7 +13,7 @@ pkg_binds=(
 pkg_exports=(
   [port]=tomcat_port
 )
-pkg_exposes=(2222)
+pkg_exposes=(port)
 
 do_prepare()
 {
