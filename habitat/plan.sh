@@ -4,7 +4,7 @@ pkg_origin=simfish85
 pkg_version=6.3.2
 pkg_maintainer="Bill Meyer <bill@chef.io>"
 pkg_license=('Apache-2.0')
-pkg_deps=(core/tomcat8 core/jre8 core/openssh)
+pkg_deps=(core/tomcat8 core/jre8)
 pkg_build_deps=(core/jdk8/8u131 core/maven)
 pkg_svc_user="root"
 pkg_binds=(
@@ -13,7 +13,7 @@ pkg_binds=(
 pkg_exports=(
   [port]=tomcat_port
 )
-pkg_exposes=(port 2222)
+pkg_exposes=(2222)
 
 do_prepare()
 {
